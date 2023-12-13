@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/* Định dạng toàn bộ header */
+.wd-center {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    
+}
+
+.wd-top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 98, 184);
+    color: #fff;
+    padding: 10px;
+    height: 20px; 
+}
+
+/* Định dạng danh sách menu bên trái */
+.wd-list-menu-l {
+    list-style: none;
+    margin-left: 180px ;
+}
+
+.wd-list-menu-l li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.wd-list-menu-l li a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Định dạng danh sách menu bên phải */
+
+.wd-list-menu-r li {
+    margin-left: 10px;
+   
+}
+.wd-list-menu-r li a{
+ color: white;
+ text-decoration: none;
+}
+
+.wd-list-menu-r li:first-child {
+    margin-right: 20px; /* Tăng khoảng cách cho phần tử đầu tiên */
+}
+
+/* Định dạng logo */
+.wd-select-language img {
+    width: 20px; /* Điều chỉnh kích thước hình ảnh */
+    height: auto; /* Đảm bảo tỷ lệ khung hình bảo toàn */
+}
+
+
+
+.Homepage {
+    display: flex;
+   
+    margin-top: 20px;
+    align-items: center; /* Căn chữ và ảnh theo chiều dọc */
+}
+
+.Homepage img {
+    width: 412px;
+    height: 55px;
+    margin-left: 240px;
+ 
+}
+
+.Homepage span {
+    display: inline; /* Để các dòng chữ hiển thị cùng hàng */
+    vertical-align: middle; /* Căn giữa dòng chữ theo chiều dọc */
+    font-size: 25px; /* Điều chỉnh kích thước chữ */
+    font-family: Arial, sans-serif; /* Điều chỉnh kiểu chữ */
+    font-weight: bold;
+}
+.Menu 
+{
+    display: flex;
+   gap: 0px;
+    margin-top: 10px;
+    align-items: center;
+}
+.navbar {
+   margin-left: 250px; /* Căn giữa theo chiều ngang */
+}
+.navbar a {
+    margin-left: 10px; /* Điều chỉnh khoảng cách bên trái */
+    margin-right: 25px; /* Điều chỉnh khoảng cách bên phải */
+    font-size: 15px;
+    color: rgb(12, 1, 1);
+    font-weight: 500px;
+    margin-top: 150px;
+    padding-right: 0px 0px;
+    transition: .3s;
+    text-decoration: none;
+    display: inline;
+}
+
+.navbar a:hover {
+    color: blue;
+}
+
+/* Định dạng mũi tên cho danh sách menu con */
+
+.wd-list-menu-r li::before {
+    content: "\25B6"; /* Mã Unicode cho biểu tượng mũi tên */
+    margin-right: 5px;
+    color: white    ; /* Màu sắc của mũi tên */
+    font-size: 12px; /* Kích thước của mũi tên */
+   
+}
+
+/* Hiển thị danh sách con khi di chuột qua mục cha */
+
+.wd-list-menu-r li:hover ul {
+    display: block;
+}
+/* Định dạng menu chức năng theo cột */
+.menu_ql {
+    background-color: rgb(70, 146, 240); 
+    padding: 10px; 
+}
+
+.menu_chucnang {
+    list-style-type: none; 
+    display: flex;
+    flex-direction: column; /* Hiển thị theo cột */
+}
+
+.menu_chucnang li {
+    margin-bottom: 10px; /* Khoảng cách giữa các mục */
+}
+
+.menu_chucnang li a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 5px 10px; 
+    border: 1px solid #fff; 
+    border-radius: 5px;
+}
+
+.menu_chucnang li a:hover {
+    background-color: rgb(17, 77, 150); 
+}
